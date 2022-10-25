@@ -35,11 +35,7 @@ def getDataPoint(quote):
     stock = quote['stock']
     bid_price = float(quote['top_bid']['price'])
     ask_price = float(quote['top_ask']['price'])
-<<<<<<< Updated upstream
-    price = (bid_price+ask_price) / 2
-=======
     price = (ask_price + bid_price) / 2
->>>>>>> Stashed changes
     return stock, bid_price, ask_price, price
 
 
